@@ -16,6 +16,17 @@ function calculate(){
         document.getElementById('message').innerHTML = ' Overweight'
         document.getElementById('message').style.color = '#D21312';
     }
+
+    if(weight == ""){
+        document.getElementById('message').innerHTML = 'Please enter your weight'
+        document.getElementById('message').style.color = '#D21312';
+        document.getElementById('output').style.display = 'none';
+    }else if(height == ""){
+        document.getElementById('message').innerHTML = 'Please enter your height'
+        document.getElementById('output').style.display = 'none';
+    }else{
+        document.getElementById('output').style.display = 'block';
+    }
 }
 
 function reload(){
